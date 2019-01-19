@@ -1,0 +1,10 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity Registers is
+	port	(	WD	    	: in std_logic; --Write Data.
+				R1_ADDR	: in std_logic_vector(4 downto 0); --Read Register 1.
+				R2_ADDR	: in std_logic_vector(4 downto 0); --Read Register 2.
+				WR_ADDR	: in std_logic_vector(4 downto 0); --Write Register.
+				R1_DATA	: out std_logic_vector(31 downto 0); --Read Data 1.
+				R2_DATA	: out std_logic_vector(31 downto 0) --Read Data 2.
